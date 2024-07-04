@@ -1,0 +1,794 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anta&family=DM+Serif+Display:ital@0;1&family=Dekko&family=Exo:ital,wght@0,100..900;1,100..900&family=Madimi+One&family=Offside&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face{
+    font-family: Paris;
+    src: url(../font/Paris2024-Variable.ttf);
+}
+
+:root {
+    --cor-primaria: #d9bf71;
+    --cor-secundaria: #0d0d0d;
+    --cor-pag-02: #002366;
+    --cor-pag-03: #02382f;
+    --cor-pag-04: #341269;
+    --cor-r: #002672;
+    --cor-flag-france: #f2293a;
+
+
+    --fonte-cabecalho: "Madimi One";
+    --fonte-titulo: "Philosopher";
+    --fonte-texto: "Exo";
+    --font-dekko: "Dekko";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Começo do Navbar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor-pag-04);
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+li,
+a {
+    font-family: Paris;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    width: 10%;
+    padding: 1%;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 0px 20px;
+    width: auto;
+    position: relative;
+}
+
+.nav-list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #978C7C;
+    transition: .5s;
+}
+
+.nav-list li:hover::before{
+    width: 70px;
+}
+
+.nav-list li a{
+    color: #f2f2f2;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/*Fim do Navbar*/
+
+/*Começo do Conteúdo*/
+.apresentacao {
+    width: 75%;
+    margin: auto;
+    padding: 2%;
+    border: 2px solid #525252;
+    background-color: whitesmoke;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+    margin-top: 8rem;
+}
+
+.paralympic{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+}
+
+.paragrafo {
+    display: flex;
+    font-family: "Exo";
+    font-size: 1.3rem;
+    color: var(--cor-secundaria);
+    flex-direction: column;
+}
+
+.subtitulo_sp {
+    font-family: var(--fonte-titulo);
+}
+
+.sub-title{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.special {
+    font-family: "Philosopher";
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--cor-pag-04);
+    color: #fdfcfc;
+    padding: 4%;
+    border: 3.5px solid var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+.line{
+    width: 950px;
+    height: 2px;
+    background-color: #978C7C;
+    margin-top: 2.5rem;
+}
+/*Fim do Coteúdo*/
+
+/*Começo do Botão*/
+.btn-container{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.btn_sports {
+    background: #FFFFFF;
+    border: 4px solid #0D0D0D;
+    width: 14rem;
+    padding: 1em;
+    text-align: left;
+    display: block;
+    margin: 5px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.btn_sports p{
+    color: var(--cor-secundaria);
+    font-family: Paris;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+
+.btn_sports:hover{
+    background-color: #0d0d0d;
+    transition: all 0.2s linear;
+}
+
+.btn_sports:hover p{
+    color: #f2f2f2;
+}
+
+/*Fim da Estilização do Botão*/
+
+/*Incio do Footer*/
+
+footer{
+    background-color: var(--cor-secundaria);
+    padding-top: 20px;
+}
+
+.container-ft{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: #f5f5f5;
+    font-family: 'Exo';
+    font-weight: bold;
+}
+
+.footer-content{
+    width: 100%;
+}
+
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p{
+    width: 150px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footer-content ul{
+    text-align: center;
+}
+
+.list{
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #5f594f;
+    transition: .5s;
+}
+
+.list li:hover::before{
+    width: 70px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+.social-icons .fa-linkedin{
+    color:  #5f594f;
+}
+
+.social-icons .fa-instagram{
+    color: #5f594f;
+    font-weight: 600;
+}
+
+.social-icons .fa-github{
+    color: #5f594f;
+}
+
+a:hover{
+    color: #E2AA44;
+}
+
+.social-icons i:hover{
+    transition: 0.3s ease;
+    color: #0d0d0d;
+}
+
+.bottom-bar{
+    background-color: #E2AA44;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p{
+    font-family: var(--fonte-texto);
+    color: #0d0d0d;
+    margin: 0;
+    font-size: 15px;
+}
+
+/*Fim do Footer*/
+
+/*Estilização dos Pictogramas*/
+.modalidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pict-container{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    overflow: hidden;
+    height: fit-content;
+    position: sticky;
+    top: calc(0px + 18rem);
+    padding: 1rem;
+}
+
+/*Pictograma Olympic*/
+
+.pict_athl img{
+    width: 100%;
+}
+
+.pict_bad img{
+    width: 100%;
+}
+
+.pict_bas img{
+    width: 100%;
+}
+
+.pict_baskt img{
+    width: 100%;
+}
+
+.pict_boxe img{
+    width: 100%;
+}
+
+.pict_break img{
+    width: 100%;
+}
+
+.pict_canoagem img{
+    width: 100%;
+}
+
+.pict_slalom img{
+    width: 100%;
+}
+
+.pict_bmx img{
+    width: 100%;
+}
+
+.pict_frestyle img{
+    width: 100%;
+}
+
+.pict_mountain img{
+    width: 100%;
+}
+
+.pict_pista img{
+    width: 100%;
+}
+
+.pict_rua img{
+    width: 100%;
+}
+
+.pict_escalada img{
+    width: 100%;
+}
+
+.pict_esgrima img{
+    width: 100%;
+}
+
+.pict_futebol img{
+    width: 100%;
+}
+
+.pict_artistica img{
+    width: 100%;
+}
+
+.pict_trampolim img{
+    width: 100%;
+}
+
+.pict_ritmica img{
+    width: 100%;
+}
+
+.pict_golfe img{
+    width: 100%;
+}
+
+.pict_handebol img{
+    width: 100%;
+}
+
+.pict_hipismo img{
+    width: 100%;
+}
+
+.pict_hockey img{
+    width: 100%;
+}
+
+.pict_judo img{
+    width: 100%;
+}
+
+.pict_levantamento img{
+    width: 100%;
+}
+
+.pict_lutas img{
+    width: 100%;
+}
+
+.pict_nado img{
+    width: 100%;
+}
+
+.pict_natacao img{
+    width: 100%;
+}
+
+.pict_pentatlo img{
+    width: 100%;
+}
+
+.pict_polo img{
+    width: 100%;
+}
+
+.pict_remo img{
+    width: 100%;
+}
+
+.pict_rugby img{
+    width: 100%;
+}
+
+.pict_saltos img{
+    width: 100%;
+}
+
+.pict_skate img{
+    width: 100%;
+}
+
+.pict_surfe img{
+    width: 100%;
+}
+
+.pict_taekwondo img{
+    width: 100%;
+}
+
+.pict_tenis img{
+    width: 100%;
+}
+
+.pict_tenis_mesa img{
+    width: 100%;
+}
+
+.pict_arco img {
+    width: 100%;
+}
+
+.pict_esportivo img{
+    width: 100%;
+}
+
+.pict_triatlo img{
+    width: 100%;
+}
+
+.pict_vela img {
+    width: 100%;
+}
+
+.pict_volei img{
+    width: 100%;
+}
+
+.pict_volei_praia img{
+    width: 100%;
+}
+
+/*Images Paralympic*/
+
+.pict_atletismo-p img{
+    width: 100%;
+}
+
+.pict_bad-p img{
+    width: 100%;
+}
+
+.pict_bas-p img{
+    width: 100%;
+}
+
+.pict_bocha img{
+    width: 100%;
+}
+
+.pict_canoagem-p img{
+    width: 100%;
+}
+
+.pict_rua-p img{
+    width: 100%;
+}
+
+.pict_pista-p img{
+    width: 100%;
+}
+
+.pict_esgrima-p img{
+    width: 100%;
+}
+
+.pict_futebol-cegos img{
+    width: 100%;
+}
+
+.pict_goalball img {
+    width: 100%;
+}
+
+.pict_halterofilismo img{
+    width: 100%;
+}
+
+.pict_hipismo-p img{
+    width: 100%;
+}
+
+.pict_judo-p img{
+    width: 100%;
+}
+
+.pict_natacao-p img{
+    width: 100%;
+}
+
+.pict_remo-p img{
+    width: 100%;
+}
+
+.pict_rugby-p img{
+    width: 100%;
+}
+
+.pict_taekwondo-p img{
+    width: 100%;
+}
+
+.pict_tenis_mesa-p img{
+    width: 100%;
+}
+
+.pict_tenis-p img{
+    width: 100%;
+}
+
+.pict_arco-p img{
+    width: 100%;
+}
+
+.pict_esportivo-p img{
+    width: 100%;
+}
+
+.pict_triatlo-p img{
+    width: 100%;
+}
+
+.pict_volei_sentado img{
+    width: 100%;
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+/*Começo da Animação do Menu Mobile*/
+@keyframes navLinksFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/*Fim da Animação do Menu Mobile*/
+
+/*Large Tablets/ Laptops*/
+
+/*Small Tablets*/    
+@media (min-width: 768px) and (max-width: 999px){
+    .apresentacao{
+        width: 100%;
+    }
+
+    .logo{
+        width: 20%;
+    }
+}
+
+/*Extra small devices*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .apresentacao{
+        width: 100%;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .nav-list{
+       position: absolute;
+       top: 11vh;
+       right: 0;
+       width: 80vw;
+       height: 92vh;
+       background: var(--cor-pag-04);
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 50px;
+       margin-top: 10px;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+       padding: 90px;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .pict-container{
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        overflow: hidden;
+        height: fit-content;
+        position: sticky;
+        top: calc(0px + 18rem);
+        padding: 1rem;
+    }
+
+    .btn_sports{
+        width: 10rem;
+    }
+
+    .btn-container{
+        width: 100%;
+    }
+
+    .container-ft{
+        flex-direction: column-reverse;
+        gap: 5rem;
+        justify-content: center;
+    }
+}
+
+/*Mobile*/
+
+@media (min-width: 100px) and (max-width: 480px){
+    .apresentacao{
+        width: 100%;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .nav-list{
+       position: absolute;
+       top: 10.5vh;
+       right: 0;
+       width: 80vw;
+       height: 92vh;
+       background: var(--cor-pag-04);
+       flex-direction: column;
+       align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 10px;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+       padding: 90px;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .special{
+        font-size: 1.3rem;
+    }
+
+    .pict-container{
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        overflow: hidden;
+        height: fit-content;
+        position: sticky;
+        top: calc(0px + 18rem);
+        padding: 1rem;
+    }
+
+    .btn_sports{
+        width: 10rem;
+    }
+
+    .btn-container{
+        width: 100%;
+    }
+
+    .container-ft{
+        flex-direction: column-reverse;
+        gap: 5rem;
+        justify-content: center;
+    }
+}
