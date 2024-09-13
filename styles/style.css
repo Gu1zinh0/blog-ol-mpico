@@ -177,7 +177,7 @@ li, a {
     align-items: center;
 }
 
-.conteudo_locais h4{
+.conteudo_locais span{
     margin: 1rem;
     font-size: 1.2rem;;
     font-family: var(--fonte-titulo);
@@ -196,7 +196,7 @@ li, a {
     flex-direction: column;
 }
 
-.img-box h4{
+.img-box span{
     margin: 0.6rem;
     display: flex;
     justify-content: left;
@@ -338,7 +338,7 @@ li, a {
     margin-bottom: 4rem;
 }
 
-.image_city h4{
+.image_city span{
     padding: 3px;
     font-size: 1rem;
     font-family: var(--fonte-texto);
