@@ -179,7 +179,7 @@ li, a {
 
 .conteudo_locais span{
     margin: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-family: var(--fonte-titulo);
     text-align: left;
 }
@@ -198,6 +198,7 @@ li, a {
 
 .img-box span{
     margin: 0.6rem;
+    font-size: 0.6rem;
     display: flex;
     justify-content: left;
     font-family: var(--fonte-texto);
