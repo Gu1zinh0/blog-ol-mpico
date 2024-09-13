@@ -179,7 +179,7 @@ li, a {
 
 .conteudo_locais span{
     margin: 1rem;
-    font-size: 1.2rem;;
+    font-size: 0.8rem;
     font-family: var(--fonte-titulo);
     text-align: left;
 }
