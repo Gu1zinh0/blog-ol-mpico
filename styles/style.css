@@ -341,7 +341,7 @@ li, a {
 
 .image_city span{
     padding: 3px;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-family: var(--fonte-texto);
 }
 
