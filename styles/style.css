@@ -178,7 +178,7 @@ li, a {
 }
 
 .conteudo_locais span{
-    margin: 1rem;
+    padding: 1px;
     font-size: 0.6rem;
     font-family: var(--fonte-titulo);
     text-align: left;
@@ -197,7 +197,7 @@ li, a {
 }
 
 .img-box span{
-    margin: 0.6rem;
+    padding: 1px;
     font-size: 0.6rem;
     display: flex;
     justify-content: left;
@@ -340,7 +340,7 @@ li, a {
 }
 
 .image_city span{
-    margin: 0.6rem;
+    padding: 1px;
     font-size: 0.6rem;
     font-family: var(--fonte-texto);
 }
